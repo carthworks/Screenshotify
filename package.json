@@ -1,0 +1,26 @@
+{
+    "name": "screenshotify",
+    "version": "1.0.0",
+    "description": "Lightweight Screenshot + Annotate Chrome Extension",
+    "scripts": {
+        "dev": "echo 'Load unpacked extension from current directory in Chrome'",
+        "build": "node scripts/build.js",
+        "lint": "eslint src/",
+        "test": "node scripts/test.js",
+        "package": "node scripts/package.js"
+    },
+    "keywords": [
+        "screenshot",
+        "annotation",
+        "chrome-extension",
+        "blur",
+        "crop",
+        "zoom"
+    ],
+    "author": "T Karthikeyan",
+    "license": "MIT",
+    "devDependencies": {
+        "archiver": "^6.0.1"
+    },
+    "dependencies": {}
+}

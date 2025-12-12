@@ -1,0 +1,143 @@
+# Chrome Web Store Listing Content
+
+## Extension Name
+```
+Screenshotify - Screenshot & Annotate Tool
+```
+
+## Summary (132 characters max)
+```
+Capture, annotate, blur, crop, and zoom screenshots. Powerful annotation tools with undo/redo. All offline and private.
+```
+
+## Detailed Description
+```
+Screenshotify - Professional Screenshot & Annotation Tool
+
+Capture, annotate, and enhance your screenshots with powerful editing tools. Perfect for creating tutorials, bug reports, presentations, and documentation.
+
+🎨 POWERFUL ANNOTATION TOOLS
+
+• Pen Tool - Free-hand drawing with customizable colors and thickness
+• Shapes - Rectangle, ellipse, and arrow annotations
+• Text - Add text labels with custom colors and sizes
+• Highlight - Semi-transparent highlighting for emphasis
+• Number Markers - Add numbered steps for tutorials
+• Blur Tool - Pixelate sensitive information
+• Eyedropper - Pick colors directly from your screenshot
+
+✂️ ADVANCED EDITING
+
+• Crop - Trim screenshots to focus on important areas (with undo!)
+• Zoom - Zoom in/out for precise editing (Ctrl + Scroll)
+• Undo/Redo - Full history support (Ctrl+Z / Ctrl+Y)
+
+🎯 KEY FEATURES
+
+✓ Offline & Private - All processing happens locally in your browser
+✓ No Account Required - Start using immediately
+✓ Keyboard Shortcuts - Fast workflow with hotkeys
+✓ Modern UI - Beautiful, intuitive interface
+✓ High Quality - PNG format for crisp screenshots
+✓ Quick Capture - One-click screenshot capture
+
+⌨️ KEYBOARD SHORTCUTS
+
+• Ctrl+Shift+S - Capture screenshot
+• Ctrl+Z - Undo
+• Ctrl+Y - Redo
+• P - Toggle pen tool
+• Esc - Cancel current action
+
+🔒 PRIVACY FIRST
+
+• No data collection
+• No external servers
+• No tracking
+• 100% offline processing
+• Your screenshots stay on your device
+
+📸 PERFECT FOR
+
+• Creating tutorials and guides
+• Bug reports and feedback
+• Documentation and wikis
+• Presentations and slides
+• Social media content
+• Educational materials
+
+🚀 HOW TO USE
+
+1. Click the extension icon or press Ctrl+Shift+S
+2. Your screen is captured automatically
+3. Use annotation tools to mark up your screenshot
+4. Crop, zoom, or adjust as needed
+5. Download or copy your annotated image
+
+💡 PRO TIPS
+
+• Use number markers for step-by-step guides
+• Pick colors with eyedropper for brand consistency
+• Blur sensitive information before sharing
+• Zoom in for pixel-perfect annotations
+• Use Ctrl+Z to undo mistakes
+
+🆕 RECENT UPDATES
+
+• Fixed text tool - now saves correctly
+• Improved highlight tool - smooth continuous strokes
+• Enhanced crop - full undo support with confirmation
+• Better popup UI - modern gradient design
+• Eyedropper fix - instant color picking
+
+⭐ WHY CHOOSE SCREENSHOTIFY?
+
+Unlike other screenshot tools, Screenshotify combines powerful annotation features with a clean, modern interface. No bloat, no complexity - just the tools you need to create professional screenshots quickly.
+
+🛠️ TECHNICAL DETAILS
+
+• Manifest V3 compliant
+• Lightweight and fast
+• No external dependencies
+• Works offline
+• Regular updates
+
+📧 SUPPORT
+
+Need help? Have suggestions? Contact us through the Chrome Web Store support tab.
+
+Made with ❤️ for productivity and privacy.
+```
+
+## Category
+```
+Productivity
+```
+
+## Language
+```
+English (United States)
+```
+
+## Tags/Keywords (for SEO)
+```
+screenshot, annotate, annotation, screen capture, markup, blur, crop, zoom, tutorial, documentation, bug report, highlight, drawing, shapes, text, eyedropper, color picker, privacy, offline
+```
+
+## Privacy Policy URL
+```
+[Your hosted privacy policy URL]
+Example: https://yourusername.github.io/screenshotify/privacy.html
+```
+
+## Support URL
+```
+[Your support URL]
+Example: https://github.com/yourusername/screenshotify/issues
+```
+
+## Official Website (Optional)
+```
+[Your website or GitHub repo]
+Example: https://github.com/yourusername/screenshotify
+```

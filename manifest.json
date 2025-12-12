@@ -1,0 +1,59 @@
+{
+  "manifest_version": 3,
+  "name": "Screenshotify",
+  "version": "1.0.0",
+  "description": "Lightweight Screenshot + Annotate Chrome Extension. Capture, annotate, blur, crop, and zoom screenshots - all offline and private.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "downloads",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "src/background/service_worker.js"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "src/icons/icon16.svg",
+      "48": "src/icons/icon48.svg",
+      "128": "src/icons/icon128.svg"
+    }
+  },
+  "options_ui": {
+    "page": "src/options/options.html",
+    "open_in_tab": true
+  },
+  "commands": {
+    "capture-screenshot": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Capture screenshot"
+    },
+    "toggle-pen": {
+      "suggested_key": {
+        "default": "Alt+P"
+      },
+      "description": "Toggle pen tool"
+    },
+    "undo": {
+      "suggested_key": {
+        "default": "Ctrl+Z",
+        "mac": "Command+Z"
+      },
+      "description": "Undo last action"
+    }
+  },
+  "icons": {
+    "16": "src/icons/icon16.svg",
+    "48": "src/icons/icon48.svg",
+    "128": "src/icons/icon128.svg"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}
