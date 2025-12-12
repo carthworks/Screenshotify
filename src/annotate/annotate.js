@@ -922,12 +922,70 @@ function clearAnnotations() {
 }
 
 /**
+ * Add watermark to canvas
+ */
+function addWatermark(targetCanvas, targetCtx) {
+    // Get current date
+    const now = new Date();
+    const dateStr = now.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+    });
+
+    // Watermark text
+    const watermarkText = `Created with Screenshotify - ${dateStr}`;
+
+    // Set font and measure text
+    const fontSize = Math.max(10, Math.floor(targetCanvas.width / 100)); // Responsive font size
+    targetCtx.font = `${fontSize}px Arial`;
+    const textMetrics = targetCtx.measureText(watermarkText);
+    const textWidth = textMetrics.width;
+    const textHeight = fontSize;
+
+    // Position in bottom-right corner with padding
+    const padding = 10;
+    const x = targetCanvas.width - textWidth - padding;
+    const y = targetCanvas.height - padding;
+
+    // Draw semi-transparent background
+    targetCtx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+    targetCtx.fillRect(
+        x - 5,
+        y - textHeight - 2,
+        textWidth + 10,
+        textHeight + 7
+    );
+
+    // Draw watermark text
+    targetCtx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+    targetCtx.font = `${fontSize}px Arial`;
+    targetCtx.textBaseline = 'bottom';
+    targetCtx.fillText(watermarkText, x, y);
+}
+
+/**
  * Download image
  */
 async function downloadImage() {
-    const blob = await getCanvasBlob();
-    const url = URL.createObjectURL(blob);
+    // Create a temporary canvas with watermark
+    const tempDownloadCanvas = document.createElement('canvas');
+    tempDownloadCanvas.width = canvas.width;
+    tempDownloadCanvas.height = canvas.height;
+    const tempDownloadCtx = tempDownloadCanvas.getContext('2d');
 
+    // Copy current canvas to temp canvas
+    tempDownloadCtx.drawImage(canvas, 0, 0);
+
+    // Add watermark
+    addWatermark(tempDownloadCanvas, tempDownloadCtx);
+
+    // Convert to blob
+    const blob = await new Promise(resolve => {
+        tempDownloadCanvas.toBlob(resolve, 'image/png');
+    });
+
+    const url = URL.createObjectURL(blob);
     const filename = `screenshotify-${Date.now()}.png`;
 
     chrome.downloads.download({
