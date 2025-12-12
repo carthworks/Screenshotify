@@ -930,14 +930,17 @@ function addWatermark(targetCanvas, targetCtx) {
     const dateStr = now.toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'short',
-        day: 'numeric'
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
     });
 
     // Watermark text
     const watermarkText = `Created with Screenshotify - ${dateStr}`;
 
     // Set font and measure text
-    const fontSize = Math.max(10, Math.floor(targetCanvas.width / 100)); // Responsive font size
+    const fontSize = Math.max(14, Math.floor(targetCanvas.width / 100)); // Responsive font size
     targetCtx.font = `${fontSize}px Arial`;
     const textMetrics = targetCtx.measureText(watermarkText);
     const textWidth = textMetrics.width;
